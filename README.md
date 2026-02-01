@@ -1,6 +1,4 @@
   <img width="1896" height="1200" alt="image" src="https://github.com/user-attachments/assets/d5d751c6-3bf8-4ab2-bf05-9793904ce42a" />
-  <img width="1868" height="1178" alt="image" src="https://github.com/user-attachments/assets/1f0f420b-00b9-43d0-a59e-1f9ce2088942" />
-  <img width="1916" height="1048" alt="image" src="https://github.com/user-attachments/assets/e8fa63df-fbc7-44a0-817a-47895b792068" />
 
 
 
@@ -31,6 +29,8 @@
 \- تعديل كل بيانات المنتج عبر نافذة تعديل كاملة  
 \- حذف المنتجات
 
+  <img width="1868" height="1178" alt="image" src="https://github.com/user-attachments/assets/1f0f420b-00b9-43d0-a59e-1f9ce2088942" />
+
 \#\#\# ![⚠️] تنبيهات المخزون
 
 \- تحديد حد أدنى لكل منتج  
@@ -45,6 +45,7 @@
 \- عدد الفواتير  
 \- قائمة المنتجات على وشك النفاذ  
 \- سجل آخر الفواتير
+  <img width="1916" height="1048" alt="image" src="https://github.com/user-attachments/assets/e8fa63df-fbc7-44a0-817a-47895b792068" />
 
 \-----
 
