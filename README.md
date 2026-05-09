@@ -1,108 +1,109 @@
   <img width="1896" height="1200" alt="image" src="https://github.com/user-attachments/assets/d5d751c6-3bf8-4ab2-bf05-9793904ce42a" />
+# 🛒 Arabic POS System - Supermarket Point of Sale
 
+A complete, offline-first Point of Sale (POS) system for supermarkets, built with pure HTML, CSS, and JavaScript (Vanilla JS). No external frameworks or internet connection required after loading.
 
+## ✨ Key Features
 
-
-\# ![🛒] نظام كاشير عربي — POS System \- Arabic
-
-نظام نقطة بيع (POS) متكامل لسوبرماركت \*\*\*\*، مبني بـ HTML \+ CSS \+ JavaScript بدون أي إطار عمل خارجي، ويعمل محلياً على الجهاز بدون حاجة لإنترنت.
-
-\-----
-
-\#\# ![⭐] المميزات
-
-\#\#\# ![🛍️] نقطة البيع
-
-\- إضافة المنتجات عبر قارئ الباركود أو يدوياً  
-\- زيادة وتقليل الكمية داخل العربة  
-\- حساب المجموع تلقائياً  
-\- حساب الباقي للزبون بعد إدخال المبلغ المدفوع  
-\- طباعة الفاتورة مباشرة
-
-\#\#\# ![📦] إدارة المخزون
-
-\- إضافة منتجات جديدة مع الباركود والتصنيف  
-\- نظام سعر مزدوج:  
-\- ![🔴] \*\*سعر التاجر\*\* — سعر الشراء من المورد  
-\- ![🟢] \*\*سعر البيع\*\* — سعر البيع في السوبرماركت  
-\- ![🔵] \*\*الربح\*\* — يُحسب تلقائياً لكل منتج  
-\- تعديل كل بيانات المنتج عبر نافذة تعديل كاملة  
-\- حذف المنتجات
+### 🛍️ Point of Sale (Cashier)
+- Add products by barcode scanner or manual search
+- Increase/Decrease product quantities in the cart
+- Automatic total calculation
+- Calculate change for customer after payment
+- Direct invoice printing
 
   <img width="1868" height="1178" alt="image" src="https://github.com/user-attachments/assets/1f0f420b-00b9-43d0-a59e-1f9ce2088942" />
 
-\#\#\# ![⚠️] تنبيهات المخزون
+### 📦 Inventory Management
+- Add new products with barcode and category
+- **Dual pricing system:**
+  - 🔴 **Dealer Price** - Purchase cost from supplier
+  - 🟢 **Selling Price** - Retail price in supermarket
+  - 🔵 **Profit** - Automatically calculated per product
+- Complete product edit window
+- Product deletion
 
-\- تحديد حد أدنى لكل منتج  
-\- تنبيه تلقائي عند اقتراب نفاذ المخزون  
-\- عرض حالة كل منتج (متوفر / ينفد)
-
-\#\#\# ![📊] التقارير
-
-\- إجمالي المنتجات في النظام  
-\- قيمة المخزون الإجمالية  
-\- مبيعات اليوم  
-\- عدد الفواتير  
-\- قائمة المنتجات على وشك النفاذ  
-\- سجل آخر الفواتير
   <img width="1916" height="1048" alt="image" src="https://github.com/user-attachments/assets/e8fa63df-fbc7-44a0-817a-47895b792068" />
 
-\-----
+### ⚠️ Stock Alerts
+- Set minimum stock level for each product
+- Automatic alert when stock is low
+- Product status display (Available / Low Stock)
 
-\#\# ![📁] هيكل المشروع
+### 📊 Reports Dashboard
+- Total products in system
+- Total inventory value
+- Today's sales
+- Number of invoices
+- List of products about to run out
+- Recent invoice history
 
-\`\`\`  
-store-pos/  
-├── store-pos.html \# الملف الرئيسي (كل الكود في ملف واحد)  
-└── README.md \# هذا الملف  
-\`\`\`
+## 📁 Project Structure
+store-pos/
+├── POS-System.html # Main file (all code in one file)
+└── README.md # This file
 
-\-----
+text
 
-\#\# ![🚀] كيف تشغّله
+## 🚀 How to Run
 
-1\. حمّل (clone) المشروع أو نزّل الملف \`store-pos.html\`  
-1\. افتحه في أي متصفح حديث (Chrome, Firefox, Edge…)  
-1\. ابدأ بإضافة منتجات من تبويب \*\*إدارة المخزون\*\*  
-1\. ثم انتقل لتبويب \*\*نقطة البيع\*\* وابدأ البيع
+1. Clone or download the `POS-System.html` file
+2. Open it in any modern browser (Chrome, Firefox, Edge, etc.)
+3. Start by adding products in the **Inventory Management** tab
+4. Switch to the **Point of Sale** tab and begin selling
 
-لا يحتاج لأي سيرفر ولا إنترنت.
+No server required. No internet needed (after initial load).
 
-\-----
+## 💾 Where Data is Stored
 
-\#\# ![💾] أين تُحفظ البيانات؟
+Data is saved locally in your browser using **localStorage**:
 
-البيانات تُحفظ محلياً داخل المتصفح عبر \*\*localStorage\*\* وهي:
+| Key | Content |
+|-----|---------|
+| `store_products` | Products, prices, and stock |
+| `store_sales` | Invoices and sales records |
 
-|المفتاح |المحتوى |  
-|-----------------|--------------------------|  
-|\`store\_products\`|المنتجات والأسعار والمخزون|  
-|store\_sales |الفواتير والمبيعات |
+### To clear data:
+1. Open Developer Tools: **F12**
+2. Go to **Application → Local Storage**
+3. Select your site
+4. Select the key and delete it
 
-\#\#\# لمسح البيانات:
+## 🛠️ Technologies Used
 
-1\. افتح أدوات المطور: \*\*F12\*\*  
-1\. اذهب لـ \*\*Application → Local Storage\*\*  
-1\. اختر الموقع  
-1\. حدد المفتاح وحذفه
+- **HTML5** - Page structure
+- **CSS3** - Styling with Grid & Flexbox (RTL support)
+- **JavaScript (Vanilla)** - All logic, no frameworks
+- **localStorage** - Client-side data persistence
 
-\-----
+## 📝 Important Notes
 
-\#\# ![🛠️] التقنيات المستخدمة
+- 📐 **Fully RTL Layout** - Designed for Arabic language support
+- 🖨️ **Direct Printing** - Print invoices directly from browser
+- 📦 **Single File** - Everything in one file for simplicity
+- 🔌 **Zero Dependencies** - No installation or external packages needed
 
-\- \*\*HTML5\*\* — هيكل الصفحة  
-\- \*\*CSS3\*\* — التصميم والـ Grid والـ Flexbox  
-\- \*\*JavaScript (Vanilla)\*\* — كل المنطق بدون إطار عمل  
-\- \*\*localStorage\*\* — حفظ البيانات محلياً
+## 🤝 Contributing
 
-\-----
+Contributions are welcome! Feel free to:
+- Report bugs
+- Suggest new features (like user accounts, barcode printing, or daily reports)
+- Submit pull requests for improvements
 
-\#\# ![📝] ملاحظات
+## 📜 License
 
-\- الواجهة كاملة باللغة العربية (RTL)  
-\- يدعم طباعة الفواتير مباشرة من المتصفح  
-\- كل الكود في ملف واحد فقط للسهولة  
-\- لا حاجة لأي تثبيت أو حزم خارجية  
+This project is open source and available under the MIT License.
+
+## 👨‍💻 Author
+
+**Abdullah XDev**
+
+---
+
+⭐ If this project helped you, please give it a star on GitHub!
+
+
+
 
 
 [image1]: <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAMAAAAMs7fIAAADAFBMVEUAAAD0Qzb0Qzb0Qzb0Qzb0QzaEsMGOprT0QzaEsMGEsMGEsMH0QzaEsMGEsMGEsMH0QzaEsMGEsMGEsMGEsMGEsMGEsMGEsMGEsMFzpbZAg5QveIkveIljmqsveIkveIkveIkveIkveIkveIkveIlalKVtobJ5qbp8orF/p7ZCQkJUX2RCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJJSUlJSUlMTExCQkJFRUVCQkJSUlJCQkJPT09HR0f0QzbtSj/KbGqglZ61gISLqbiEsMHYXlmuh410prd/rb4veIlalKU/g5RKiptfmKlkm6xpn7BEhpePwNCWytmGs8SNvc2LuspjeYJCQkKo4/B0laGk3epTXmJ6nqqBqLVngIlYWFhvb29pf4hpg4xcXFxMTExycnJjcXah2ed9oa1SUlJ1dXVqcHKHssCNvMtocHNPT09oaGh+pbKSw9FqeH1ra2tVVVUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA885fkAAAAPnRSTlMAEI+/gDAwr0AQv8+fr++AcJ9w30CPIGBQ71BAgM/fEI8w789wgO/vgL8w70AQ32DvryCA3+/vUO+fz4+/r5pR5i8AAACVSURBVHheVU27DgIxDDNFOqGc1AgI6CQmFiY2JirGLAgGPoKFf+Rv2O8HbiHXhkcdNY5sNwFqTK0q6PZVC3N74V+QQybVlsVcQesG/TJZCkhKxJ0AEcdvhq0pVlgXJRKp1dLIP0cWRWMX8m1gkrsMQwKennGcgUut2Fr+jDJiXOKbF83NnWuh0O9m9zztNw+3kJxPhd4qoQ4Us9Y9FwAAAABJRU5ErkJggg==>
