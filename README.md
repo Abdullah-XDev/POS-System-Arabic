@@ -1,5 +1,6 @@
-  <img width="1896" height="1200" alt="image" src="https://github.com/user-attachments/assets/d5d751c6-3bf8-4ab2-bf05-9793904ce42a" />
-# 🛒 Arabic POS System - Supermarket Point of Sale
+<img width="1896" height="1200" alt="image" src="https://github.com/user-attachments/assets/d5d751c6-3bf8-4ab2-bf05-9793904ce42a" />
+
+## 🛒 Arabic POS System - Supermarket Point of Sale
 
 A complete, offline-first Point of Sale (POS) system for supermarkets, built with pure HTML, CSS, and JavaScript (Vanilla JS). No external frameworks or internet connection required after loading.
 
